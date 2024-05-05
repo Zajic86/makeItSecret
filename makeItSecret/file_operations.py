@@ -81,10 +81,10 @@ def decrypt_file(filename, private_key_file):
                     label=None
                 )
             )
-            with open(filename[:-10], "wb") as decrypted_file:  # Odebrání přípony ".encrypted"
+            with open(filename[:-10], "wb") as decrypted_file:  # remove apx ".encrypted"
                 decrypted_file.write(decrypted_data)
         except ValueError:
-            raise InvalidKeyError("Nesprávný klíč pro dešifrování.")
+            raise InvalidKeyError("Wrong key for decrypting")
 
 
 # list files

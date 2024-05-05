@@ -1,5 +1,5 @@
 # makeItSecret
-Python script to encrypt/decrypt any files with RSA asymmetric encryption and generate custom public/private keys.
+Python script for encrypting/decrypting a file and generating own keys using RSA256 asymmetric ciphers
 
 ## Install & run
 ``` bash
